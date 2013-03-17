@@ -1,0 +1,23 @@
+{
+  "name": "toolbar",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "manuelstofer/koboldmaki": "*",
+    "manuelstofer/each": "*",
+    "component/event": "*",
+    "component/object": "*",
+    "component/map": "*",
+    "component/css": "*",
+    "anthonyshort/offset": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "toolbar.css"
+  ],
+  "scripts": [
+    "index.js"
+  ]
+}

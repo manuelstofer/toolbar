@@ -1,0 +1,11 @@
+.toolbar {
+    position: absolute;
+}
+
+.toolbar img{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.toolbar img:last-child {
+    margin-right: 0;
+}
