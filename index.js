@@ -11,7 +11,7 @@ var View    = require('koboldmaki'),
 
 var defaults = {
     position:   'left',
-    delay:      300
+    delay:      800
 };
 
 function Toolbar(el, options) {
@@ -40,6 +40,7 @@ function Toolbar(el, options) {
                 handler();
             }
             triggerEvent(el, handler);
+            instance.remove();
         },
 
         bindEvents: function () {
@@ -81,10 +82,14 @@ function Toolbar(el, options) {
         hide: function () {
             setTimeout(function () {
                 if (!instance.overToolbar && !instance.overElement && instance.visible) {
-                    instance.visible = false;
-                    document.body.removeChild(instance.el);
+                   instance.remove();
                 }
             }, options.delay || defaults.delay);
+        },
+
+        remove: function () {
+            instance.visible = false;
+            document.body.removeChild(instance.el);
         },
 
         render: function () {
