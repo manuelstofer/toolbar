@@ -2,7 +2,7 @@
 module.exports = Toolbar;
 
 var View    = require('koboldmaki'),
-    each    = require('each'),
+    each    = require('foreach'),
     object  = require('object'),
     event   = require('event'),
     map     = require('map'),

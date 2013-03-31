@@ -5,7 +5,7 @@
   "keywords": [],
   "dependencies": {
     "manuelstofer/koboldmaki": "*",
-    "manuelstofer/each": "*",
+    "manuelstofer/foreach": "*",
     "component/event": "*",
     "component/object": "*",
     "component/map": "*",
